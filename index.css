@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,20 +8,22 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
-html{
+html {
     font-size: 62.2%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
-section{
+section {
     padding: 2rem 9%;
 }
-header{
+header {
     position: fixed;
-    top:0; left: 0; right: 0;
-    background: #4E5356;
-    padding: 2rem 9%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(78, 83, 86, 0.8); /* Az első három érték a szín (RGB), az utolsó érték az átlátszóság (50%) */
+    padding: 1rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,22 +37,57 @@ header{
     color: #FFD398;
 }
 
-header .navbar a{
-    font-size: 24px;
-    padding: 40px;
-    color:#FFD398;
+header .navbar {
+    display: flex;
+    align-items: center;
 }
-header .icons a{
+
+header .navbar a {
+    font-size: 24px;
+    padding-right: 50px;
+    color: #FFD398;
+    position: relative;
+}
+
+header .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Közvetlenül a szöveg alatt */
+    left: 0; /* Bal oldalon kezdődik */
+    width: 0;
+    height: 2px;
+    background-color: #ffff;
+    transition: width 0.3s;
+}
+
+header .navbar a:hover::after {
+    width: 50%; /* Csak a szöveg alatti vonal legyen */
+}
+
+/* Törölje a hover effektet a hamburger menüből */
+.menu-toggle:hover {
+    background: none;
+    color: #FFD398;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icons a {
     font-size: 3rem;
     margin-left: 22px;
     width: 40px;
     height: 40px;
 }
-header .icons img{
+
+header .icons img {
     width: 40px;
     height: 40px;
 }
-.home{
+
+.home {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -59,8 +96,8 @@ header .icons img{
     background: url(skull-778073_1280.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -82,7 +119,6 @@ header .icons img{
     padding-top: 10px;
     padding-right: 200px;
 }
-
 
 @media (max-width: 1200px) {
     header {
@@ -106,7 +142,7 @@ header .icons img{
 @media (max-width: 992px) {
     header .navbar a {
         font-size: 20px;
-        padding: 30px;
+        padding-right: 20px;
     }
 
     .content {
@@ -123,7 +159,25 @@ header .icons img{
     }
 }
 
+@media (max-width: 840px) {
+    header .icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 790px) {
+    header .icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
     header .navbar {
         display: none;
         flex-direction: column;
@@ -134,7 +188,7 @@ header .icons img{
         width: 100%;
         z-index: 1000;
     }
-
+    
     header .navbar.active {
         display: flex;
     }
@@ -147,9 +201,31 @@ header .icons img{
         color: #FFD398;
         border-bottom: 1px solid #FFD398;
     }
+    header .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: 0; /* Közvetlenül a szöveg alatt */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #ffffff;
+        transition: width 0.3s;
+    }
+    header .navbar a:hover::after {
+        width: 100%; /* Csak a szöveg alatti vonal legyen */
+    }
 
     .menu-toggle {
         display: block;
+        position: absolute;
+        right: -20px;
+    }
+
+    header .icons {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .content {
@@ -157,24 +233,28 @@ header .icons img{
     }
 
     .content h1 {
-        font-size: 50px;
-        border-bottom: none;
+        font-size: 60px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid white;
     }
-
+    
     .content span {
         font-size: 20px;
-        padding-right: 0;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 100px;
     }
 }
 
 @media (max-width: 576px) {
     header {
-        padding: 1rem 5%;
+        padding-top: 15px;
     }
 
     header .navbar a {
         font-size: 16px;
-        padding: 15px;
+        padding: 10px;
     }
 
     header .icons a {
@@ -182,7 +262,16 @@ header .icons img{
         margin-left: 10px;
         width: 30px;
         height: 30px;
+        padding-top: 5px;
     }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: -30px;
+        top: 2px;
+    }
+    
 
     .home {
         justify-content: center;
@@ -191,15 +280,20 @@ header .icons img{
     }
 
     .content {
-        margin-top: 50px;
+        margin-top: 200px;
     }
 
     .content h1 {
         font-size: 40px;
+        margin: 0;
+        padding-right:0;
+        border-bottom: 1px solid white;
     }
-
+    
     .content span {
         font-size: 18px;
-        padding-right: 0;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 100px;
     }
 }
