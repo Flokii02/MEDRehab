@@ -5,24 +5,31 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: .2s linear;
+    font-family: 'Montserrat';
 }
+
+body {
+    background: #4E5356;
+}
+
 html {
-    font-size: 62.2%;
+    font-size: 62.5%; /* 1rem = 10px */
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+
 section {
     padding: 2rem 9%;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(78, 83, 86, 0.8); /* Az első három érték a szín (RGB), az utolsó érték az átlátszóság (50%) */
+    background: rgba(78, 83, 86, 0.8);
     padding: 1rem 9%;
     display: flex;
     align-items: center;
@@ -30,6 +37,7 @@ header {
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgb(0,0,0, .1);
 }
+
 .menu-toggle {
     display: none;
     font-size: 3rem;
@@ -52,8 +60,8 @@ header .navbar a {
 header .navbar a::after {
     content: '';
     position: absolute;
-    bottom: 0; /* Közvetlenül a szöveg alatt */
-    left: 0; /* Bal oldalon kezdődik */
+    bottom: 0;
+    left: 0;
     width: 0;
     height: 2px;
     background-color: #ffff;
@@ -61,10 +69,9 @@ header .navbar a::after {
 }
 
 header .navbar a:hover::after {
-    width: 50%; /* Csak a szöveg alatti vonal legyen */
+    width: 50%;
 }
 
-/* Törölje a hover effektet a hamburger menüből */
 .menu-toggle:hover {
     background: none;
     color: #FFD398;
@@ -120,22 +127,150 @@ header .icons img {
     padding-right: 200px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.outer-rectangle {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-rectangle {
+    background-color: #FFD398;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 570px;
+    height: 750px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.text-section {
+    padding-top: 20px;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.separator1 {
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.separator {
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    margin: 15px auto 0;
+}
+
+.text-section:last-child {
+    margin-bottom: 0;
+}
+
+.right-rectangles {
+    width: 570px;
+    height: 700px;
+}
+
+.rectangle-image {
+    width: 570px;
+    height: 750px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+@media (max-width: 1750px) {
+    .outer-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-rectangle, .right-rectangles {
+        width: 90%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .container{
+        margin-top: 500px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .outer-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-rectangle, .right-rectangles {
+        width: 90%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+    }
+    .text-section {
+        font-size: 14px;
+    }
+    .container{
+        margin-top: 450px;
+    }
+}
+
 @media (max-width: 1200px) {
     header {
         padding: 2rem 5%;
     }
-
     .home {
         background-size: cover;
     }
-
     .content h1 {
         font-size: 90px;
     }
-
     .content span {
         font-size: 30px;
         padding-right: 150px;
+    }
+    .outer-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-rectangle, .right-rectangles {
+        width: 90%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+    }
+    .text-section {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .container{
+        margin-top: 300px;
     }
 }
 
@@ -144,18 +279,36 @@ header .icons img {
         font-size: 20px;
         padding-right: 20px;
     }
-
     .content {
         margin-top: 150px;
     }
-
     .content h1 {
         font-size: 70px;
     }
-
     .content span {
         font-size: 25px;
         padding-right: 100px;
+    }
+    .outer-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-rectangle, .right-rectangles {
+        width: 90%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+    }
+    .text-section {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .container{
+        margin-top: 200px;
     }
 }
 
@@ -171,13 +324,25 @@ header .icons img {
         width: 20px;
         height: 20px;
     }
+    .outer-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-rectangle, .right-rectangles {
+        width: 90%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+    }
+    
 }
 
 @media (max-width: 768px) {
     header {
         justify-content: space-between;
     }
-
     header .navbar {
         display: none;
         flex-direction: column;
@@ -188,11 +353,9 @@ header .icons img {
         width: 100%;
         z-index: 1000;
     }
-    
     header .navbar.active {
         display: flex;
     }
-
     header .navbar a {
         font-size: 18px;
         padding: 20px;
@@ -204,7 +367,7 @@ header .icons img {
     header .navbar a::after {
         content: '';
         position: absolute;
-        bottom: 0; /* Közvetlenül a szöveg alatt */
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 0;
@@ -213,37 +376,42 @@ header .icons img {
         transition: width 0.3s;
     }
     header .navbar a:hover::after {
-        width: 100%; /* Csak a szöveg alatti vonal legyen */
+        width: 100%;
     }
-
     .menu-toggle {
         display: block;
         position: absolute;
         right: -20px;
     }
-
     header .icons {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
-
     .content {
         margin-top: 100px;
     }
-
     .content h1 {
         font-size: 60px;
-        margin: 0;
-        padding: 0;
-        border-bottom: 1px solid white;
     }
-    
     .content span {
         font-size: 20px;
-        margin: 0;
-        padding-top: 10px;
         padding-right: 100px;
+    }
+    .outer-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-rectangle, .right-rectangles {
+        width: 90%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        margin-top: 200px;
     }
 }
 
@@ -251,12 +419,10 @@ header .icons img {
     header {
         padding-top: 15px;
     }
-
     header .navbar a {
         font-size: 16px;
         padding: 10px;
     }
-
     header .icons a {
         font-size: 2rem;
         margin-left: 10px;
@@ -264,36 +430,36 @@ header .icons img {
         height: 30px;
         padding-top: 5px;
     }
-
     .menu-toggle {
         display: block;
         position: absolute;
         right: -30px;
         top: 2px;
     }
-    
-
     .home {
         justify-content: center;
         text-align: center;
         padding-right: 0;
     }
-
     .content {
         margin-top: 200px;
     }
-
     .content h1 {
         font-size: 40px;
-        margin: 0;
-        padding-right:0;
-        border-bottom: 1px solid white;
     }
-    
     .content span {
         font-size: 18px;
-        margin: 0;
-        padding-top: 10px;
-        padding-right: 100px;
     }
+    .left-rectangle, .right-rectangles {
+        width: 100%;
+        height: auto;
+    }
+    .rectangle-image {
+        width: 100%;
+        height: auto;
+    }
+    .left-rectangle {
+        margin-bottom: 20px;
+    }
+    
 }
