@@ -127,103 +127,97 @@ header .icons img {
     padding-right: 200px;
 }
 
+/*masodik szekcio */
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: 100px;
+   margin-top: 300px;
    
 }
-
-.outer-rectangle {
-    width: 80%;
+.section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; 
+    padding: 2rem;
 }
-
-.left-rectangle {
+.text-box {
+    font-size: 18px;
     background-color: #FFD398;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    width: 570px;
-    height: 750px;
+    padding: 2rem;
+    width: 45%;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
-
-h1 {
-    font-size: 48px;
-    margin-top: 30px;
+.text-box h1 {
+    font-size: 5rem;
+    display: inline-block;
 }
-
-.text-section {
-    padding-top: 20px;
-    color: #000000;
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 25px;
-}
-
 .separator1 {
-    width: 50%;
+width: 50%;
+height: 2px;
+background-color: black;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.text-box .separator {
     height: 2px;
     background-color: black;
-    margin-top: 10px;
 }
 
-.separator {
+.text-box .separator.middle {
     width: 50%;
-    height: 2px;
-    background-color: black;
-    margin: 15px auto 0;
+    margin: 1rem auto; 
 }
-
-.text-section:last-child {
-    margin-bottom: 0;
+.text-box p {
+    margin-top: 5rem;
+    margin-bottom: 1rem; 
 }
-
-.right-rectangles {
-    width: 570px;
-    height: auto;
+.image-box {
+    width: 45%;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center; 
 }
-
-.rectangle-image {
-    width: 570px;
-    height: 750px;
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
 }
-
-
-
-@media (max-width: 1500px) {
-    .outer-rectangle {
-        
-        align-items: center;
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+        padding: 1rem;
     }
-    .left-rectangle{
+    .text-box, .image-box {
         width: 90%;
+        margin: 1rem 0;
         height: auto;
     }
-    .right-rectangles {
-        width: 90%;
-        height: auto;
-        margin-left: 50px;
-    }
-    .rectangle-image {
-        width: 100%;
+    .image-box img {
         height: auto;
     }
-    .text-section {
-        font-size: 12px;
+    .container{
+        margin-top: 600px;
     }
-    
-   
 }
+@media (max-width: 750px){
+.container{
+    margin-top: 700px;
+}
+}
+
+
+/*itt a vege */
+/*menu kezdete*/
 
 @media (max-width: 1200px) {
     header {
@@ -239,31 +233,7 @@ h1 {
         font-size: 30px;
         padding-right: 150px;
     }
-    .outer-rectangle {
-        flex-direction: column;
-        align-items: center;
-    }
-    .left-rectangle, .right-rectangles {
-        width: 80%;
-        height: auto;
-    }
-    .right-rectangles{
-        margin-left: 0px;
-    }
-    .rectangle-image {
-        width: 100%;
-        height: auto;
-        margin-top: 50px;
-    }
-    .text-section {
-        font-size: 13px;
-    }
-    h1 {
-        font-size: 40px;
-    }
-    .container{
-        margin-top: 400px;
-    }
+    
 }
 
 @media (max-width: 992px) {
@@ -281,27 +251,7 @@ h1 {
         font-size: 25px;
         padding-right: 100px;
     }
-    .outer-rectangle {
-        flex-direction: column;
-        align-items: center;
-    }
-    .left-rectangle, .right-rectangles {
-        width: 90%;
-        height: auto;
-    }
-    .rectangle-image {
-        width: 100%;
-        height: auto;
-    }
-    .text-section {
-        font-size: 12px;
-    }
-    h1 {
-        font-size: 38px;
-    }
-    .container{
-        margin-top: 400px;
-    }
+   
 }
 
 @media (max-width: 840px) {
@@ -309,9 +259,7 @@ h1 {
         width: 30px;
         height: 30px;
     }
-    .container{
-        margin-top: 350px;
-    }
+   
 }
 
 @media (max-width: 790px) {
@@ -319,21 +267,7 @@ h1 {
         width: 20px;
         height: 20px;
     }
-    .outer-rectangle {
-        flex-direction: column;
-        align-items: center;
-    }
-    .left-rectangle, .right-rectangles {
-        width: 90%;
-        height: auto;
-    }
-    .rectangle-image {
-        width: 100%;
-        height: auto;
-    }
-    .container{
-        margin-top: 350px;
-    }
+   
     
 }
 
@@ -396,21 +330,7 @@ h1 {
         font-size: 20px;
         padding-right: 100px;
     }
-    .outer-rectangle {
-        flex-direction: column;
-        align-items: center;
-    }
-    .left-rectangle, .right-rectangles {
-        width: 90%;
-        height: auto;
-    }
-    .rectangle-image {
-        width: 100%;
-        height: auto;
-    }
-    .container{
-        margin-top: 350px;
-    }
+   
 }
 
 @media (max-width: 576px) {
@@ -448,27 +368,13 @@ h1 {
     .content span {
         font-size: 18px;
     }
-    .left-rectangle, .right-rectangles {
-        width: 100%;
-        height: auto;
-    }
-    .rectangle-image {
-        width: 100%;
-        height: auto;
-    }
-    .container{
-        margin-top: 400px;
-    }
+   
    
     
 }
-@media (max-width: 425px){
-   .right-rectangles{
-    margin-left: 0px;
-   }
-}
+/*menu vege*/
 
-
+/*3dik szekcio*/
 
 .new-section1 {
     display: flex;
@@ -535,7 +441,7 @@ h1 {
 }
 @media (max-width: 1500px) {
     .new-section1{
-        margin-top: 0px;
+        margin-top: 300px;
     }
 }
 
@@ -546,19 +452,18 @@ h1 {
         font-size: 1.1rem;
         background-color: #E5E3E6;
     }
-    .new-section1{
-        margin-top: 100px;
-    }
+   
 }
 @media(max-width:1200px) {
 
     .new-section1{
-        margin-top: 350px;
+        margin-top: 600px;
     }
 }
-@media(max-width:750px) {
-
+@media(max-width:760px) {
     .new-section1{
-        margin-top: 300px;
+        margin-top: 650px;
     }
+    
 }
+/*3dik szekcio vege*/
