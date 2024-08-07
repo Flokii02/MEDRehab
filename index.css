@@ -214,6 +214,12 @@ margin-bottom: 20px;
     margin-top: 700px;
 }
 }
+@media (max-width: 400px){
+    .container{
+        margin-top: 800px;
+    }
+    }
+
 
 
 /*itt a vege */
@@ -463,6 +469,12 @@ margin-bottom: 20px;
 @media(max-width:760px) {
     .new-section1{
         margin-top: 650px;
+    }
+    
+}
+@media(max-width:400px) {
+    .new-section1{
+        margin-top: 700px;
     }
     
 }
