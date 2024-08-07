@@ -214,9 +214,9 @@ margin-bottom: 20px;
     margin-top: 700px;
 }
 }
-@media (max-width: 400px){
+@media (max-width: 480px){
     .container{
-        margin-top: 800px;
+        margin-top: 850px;
     }
     }
     @media (max-width: 360px){
@@ -477,9 +477,9 @@ margin-bottom: 20px;
     }
     
 }
-@media(max-width:400px) {
+@media(max-width:480px) {
     .new-section1{
-        margin-top: 700px;
+        margin-top: 750px;
     }
     
 }
