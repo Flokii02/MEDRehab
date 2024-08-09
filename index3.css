@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: #4E5356;
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(78, 83, 86, 0.8);
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0, .1);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #FFD398;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar a {
+    font-size: 24px;
+    padding-right: 50px;
+    color: #FFD398;
+    position: relative;
+}
+
+header .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffff;
+    transition: width 0.3s;
+}
+
+header .navbar a:hover::after {
+    width: 50%;
+}
+
+.menu-toggle:hover {
+    background: none;
+    color: #FFD398;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icons a {
+    font-size: 3rem;
+    margin-left: 22px;
+    width: 40px;
+    height: 40px;
+}
+
+header .icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    text-align: right;
+    background: url(skull-778073_1280.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 200px;
+    color: #D0AE80;
+}
+
+.content h1 {
+    font-size: 120px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+}
+
+.content span {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 200px;
+}
+
+/*masodik szekcio */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   margin-top: 300px;
+   
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; 
+    padding: 2rem;
+}
+.text-box {
+    font-size: 18px;
+    background-color: #FFD398;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 2rem;
+    width: 45%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+.text-box h1 {
+    font-size: 5rem;
+    display: inline-block;
+}
+.separator1 {
+width: 50%;
+height: 2px;
+background-color: black;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.text-box .separator {
+    height: 2px;
+    background-color: black;
+}
+
+.text-box .separator.middle {
+    width: 50%;
+    margin: 1rem auto; 
+}
+.text-box p {
+    margin-top: 5rem;
+    margin-bottom: 1rem; 
+}
+.image-box {
+    width: 45%;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center; 
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .text-box, .image-box {
+        width: 90%;
+        margin: 1rem 0;
+        height: auto;
+    }
+    .image-box img {
+        height: auto;
+    }
+    .container{
+        margin-top: 600px;
+    }
+}
+@media (max-width: 750px){
+.container{
+    margin-top: 700px;
+}
+}
+@media (max-width: 480px){
+    .container{
+        margin-top: 850px;
+    }
+    }
+    @media (max-width: 360px){
+        .container{
+            margin-top: 900px;
+        }
+        }
+
+
+
+/*itt a vege */
+/*menu kezdete*/
+
+@media (max-width: 1200px) {
+    header {
+        padding: 2rem 5%;
+    }
+    .home {
+        background-size: cover;
+    }
+    .content h1 {
+        font-size: 90px;
+    }
+    .content span {
+        font-size: 30px;
+        padding-right: 150px;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    header .navbar a {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .content {
+        margin-top: 150px;
+    }
+    .content h1 {
+        font-size: 70px;
+    }
+    .content span {
+        font-size: 25px;
+        padding-right: 100px;
+    }
+   
+}
+
+@media (max-width: 840px) {
+    header .icons img {
+        width: 30px;
+        height: 30px;
+    }
+   
+}
+
+@media (max-width: 790px) {
+    header .icons img {
+        width: 20px;
+        height: 20px;
+    }
+   
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+    header .navbar {
+        display: none;
+        flex-direction: column;
+        background: #4E5356;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    header .navbar.active {
+        display: flex;
+    }
+    header .navbar a {
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        color: #FFD398;
+        border-bottom: 1px solid #FFD398;
+    }
+    header .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #ffffff;
+        transition: width 0.3s;
+    }
+    header .navbar a:hover::after {
+        width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: -20px;
+    }
+    header .icons {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .content h1 {
+        font-size: 60px;
+    }
+    .content span {
+        font-size: 20px;
+        padding-right: 100px;
+    }
+   
+}
+
+@media (max-width: 576px) {
+    header {
+        padding-top: 15px;
+    }
+    header .navbar a {
+        font-size: 16px;
+        padding: 10px;
+    }
+    header .icons a {
+        font-size: 2rem;
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+    }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: -30px;
+        top: 2px;
+    }
+    .home {
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+    }
+    .content {
+        margin-top: 200px;
+    }
+    .content h1 {
+        font-size: 40px;
+    }
+    .content span {
+        font-size: 18px;
+    }
+   
+   
+    
+}
+/*menu vege*/
+
+/*3dik szekcio*/
+
+.new-section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.new-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    background-color: #E5E3E6;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+}
+
+.rectangle img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.rectangle .text-content {
+    margin-left: 20px;
+    color: #000;
+    font-size: 1.6rem;
+    background-color: #E5E3E6;
+}
+.text-content p{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #000; 
+}
+.text-content img{
+    margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+    .new-section1 {
+        flex-direction: column;
+        height: auto;
+    }
+    .new-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .rectangle {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .rectangle:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 1500px) {
+    .new-section1{
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 1300px){
+    .rectangle .text-content {
+        margin-left: 20px;
+        color: #000;
+        font-size: 1.1rem;
+        background-color: #E5E3E6;
+    }
+   
+}
+@media(max-width:1200px) {
+
+    .new-section1{
+        margin-top: 600px;
+    }
+}
+@media(max-width:760px) {
+    .new-section1{
+        margin-top: 650px;
+    }
+    
+}
+@media(max-width:480px) {
+    .new-section1{
+        margin-top: 750px;
+    }
+    
+}
+@media (max-width: 360px){
+    .new-section1{
+        margin-top: 850px;
+    }
+    }
