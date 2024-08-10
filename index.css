@@ -103,6 +103,7 @@ header .icons img {
     background: url(skull-778073_1280.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 20px;
 }
 
 .content {
@@ -134,7 +135,6 @@ header .icons img {
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
 }
 .section {
     display: flex;
@@ -191,6 +191,7 @@ margin-bottom: 20px;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
 }
+
 @media (max-width: 1200px) {
     .section {
         flex-direction: column;
@@ -207,10 +208,22 @@ margin-bottom: 20px;
     .container{
         margin-top: 600px;
     }
+    .text-box {
+        font-size: 16px;
+    }
+    .text-box h1 {
+        font-size: 40px;
+    }
 }
 @media (max-width: 750px){
 .container{
     margin-top: 700px;
+}
+.text-box {
+    font-size: 12px;
+}
+.text-box h1 {
+    font-size: 30px;
 }
 }
 @media (max-width: 480px){
@@ -478,7 +491,7 @@ margin-bottom: 20px;
 }
 @media(max-width:480px) {
     .new-section1{
-        margin-top: 850px;
+        margin-top: 750px;
     }
     
 }
@@ -491,6 +504,6 @@ margin-bottom: 20px;
 .separatordiv{
     width: 100%;
     height: 100px;
-    margin-top:30px;
-    margin-botom:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
