@@ -462,11 +462,7 @@ margin-bottom: 20px;
         margin-bottom: 0;
     }
 }
-@media (max-width: 1500px) {
-    .new-section1{
-        margin-top: 300px;
-    }
-}
+
 
 @media (max-width: 1300px){
     .rectangle .text-content {
@@ -477,27 +473,22 @@ margin-bottom: 20px;
     }
    
 }
-@media(max-width:1200px) {
 
-    .new-section1{
-        margin-top: 600px;
-    }
-}
 @media(max-width:760px) {
     .new-section1{
-        margin-top: 650px;
+        margin-top: 450px;
     }
     
 }
 @media(max-width:480px) {
     .new-section1{
-        margin-top: 750px;
+        margin-top: 300px;
     }
     
 }
 @media (max-width: 360px){
     .new-section1{
-        margin-top: 850px;
+        margin-top: 200px;
     }
     }
 /*3dik szekcio vege*/
