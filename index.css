@@ -222,7 +222,14 @@ margin-bottom: 20px;
 .text-box h1 {
     font-size: 30px;
 }
+.separatordiv{
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+}
+
 
 
 
@@ -341,7 +348,12 @@ margin-bottom: 20px;
         font-size: 20px;
         padding-right: 100px;
     }
-   
+    .separatordiv{
+        width: 100%;
+        height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -449,6 +461,12 @@ margin-bottom: 20px;
     .rectangle:last-child {
         margin-bottom: 0;
     }
+    .separatordiv{
+        width: 100%;
+        height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -472,3 +490,94 @@ margin-bottom: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/*galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    margin-bottom: 2rem;
+}
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left; 
+}
+.box .separator {
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 1rem;
+    text-align: left; 
+}
+.box p {
+    font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .separatordiv{
+        width: 100%;
+        height: 100px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+/*vege*/
+/*button*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.custom-button {
+    background-color: #D9D9D9;
+    color: #000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.custom-button .button-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.custom-button:hover {
+    background-color: #c0c0c0;
+}
+
+@media (max-width: 768px) {
+    .custom-button {
+        width: 80%;
+        justify-content: center;
+    }
+}
+/*vege*/
