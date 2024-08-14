@@ -636,3 +636,40 @@ margin-bottom: 20px;
         height: 300px;
     }
 }
+/*vege*/
+/*footer*/
+footer {
+    padding: 20px;
+    text-align: center;
+}
+.top-line, .bottom-line {
+    height: 2px; /* Line height */
+    background-color: #FFD398; /* Line color */
+    margin: 0 auto;
+}
+.top-line {
+    width: 60%; /* Adjust width to match the text width */
+}
+.bottom-line {
+    width: 40%; /* Slightly smaller width */
+}
+.footer-content {
+    margin: 20px auto;
+    max-width: 800px; /* Limit max width of the content */
+    text-align: center;
+}
+.footer-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FFD398; /* Text color */
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.icons img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+}
