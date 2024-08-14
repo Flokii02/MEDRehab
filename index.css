@@ -623,3 +623,16 @@ margin-bottom: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        margin: 10px; /* Reduced margin for smaller screens */
+    }
+    .video-container, .info-container {
+        padding: 10px;
+        width: 100%;
+    }
+    .map-container iframe {
+        height: 300px;
+    }
+}
