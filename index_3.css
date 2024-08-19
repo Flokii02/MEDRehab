@@ -43,6 +43,7 @@ header {
     font-size: 3rem;
     cursor: pointer;
     color: #FFD398;
+    
 }
 
 header .navbar {
@@ -222,6 +223,7 @@ header .icons img {
         display: block;
         position: absolute;
         right: -20px;
+        bottom: 5px;
     }
     header .icons {
         position: absolute;
@@ -303,25 +305,25 @@ footer {
     text-align: center;
 }
 .top-line, .bottom-line {
-    height: 2px; /* Line height */
-    background-color: #FFD398; /* Line color */
+    height: 2px; 
+    background-color: #FFD398; 
     margin: 0 auto;
 }
 .top-line {
-    width: 60%; /* Adjust width to match the text width */
+    width: 60%; 
 }
 .bottom-line {
-    width: 40%; /* Slightly smaller width */
+    width: 40%; 
 }
 .footer-content {
     margin: 20px auto;
-    max-width: 800px; /* Limit max width of the content */
+    max-width: 800px; 
     text-align: center;
 }
 .footer-content h2 {
     margin: 0;
     font-size: 1.5rem;
-    color: #FFD398; /* Text color */
+    color: #FFD398; 
 }
 .icons {
     display: flex;
@@ -372,7 +374,7 @@ footer {
 }
 .booking-section p {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -389,25 +391,25 @@ footer {
     flex: 1;
 }
 .icon-container img {
-    width: 100px;  /* Ikonok szélességének növelése */
-    height: 100px; /* Ikonok magasságának növelése */
+    width: 100px;  
+    height: 100px; 
     margin-bottom: 10px;
 }
 .icon-container p {
-    font-size: 1rem;
+    font-size: 14px;
     margin: 0;
     color: #ffff;
 }
 @media (max-width: 768px) {
     .icons-section {
-        flex-direction: column; /* Az ikonokat egymás alá rendezi */
+        flex-direction: column; 
         align-items: center;
     }
     .icon-container {
-        margin-bottom: 20px; /* Margin a konténerek között */
+        margin-bottom: 20px; 
     }
     .icon-container img {
-        width: 80px;  /* Kis képernyőn kisebb ikonok */
+        width: 80px;  
         height: 80px;
     }
 }
@@ -455,7 +457,7 @@ footer {
 .work-hours-table td {
     padding: 15px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 14px;
     vertical-align: middle;
     box-sizing: border-box;
     word-break: break-word;
@@ -544,11 +546,11 @@ footer {
     width: 100%;
     margin: 20px 0;
     border: 0;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #fff;
 }
 
 .info-container p {
-    font-size: 1.2rem;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 
@@ -556,7 +558,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     background-color: #FFD398;
-    color: #000;
+    color: #ffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
