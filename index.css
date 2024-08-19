@@ -332,6 +332,7 @@ margin-bottom: 20px;
         display: block;
         position: absolute;
         right: -20px;
+        bottom: 5px;
     }
     header .icons {
         position: absolute;
