@@ -398,3 +398,54 @@ footer {
     margin: 0;
     font-size: 2rem; /* Adjust size as needed */
 }
+/* Alap animációs beállítások az elemekhez */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* A scroll-triggerelt animációk */
+.scroll-fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.scroll-slide {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.scroll-zoom {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Amikor az elem láthatóvá válik */
+.in-view {
+    opacity: 1;
+    transform: translateX(0);
+    transform: scale(1);
+}
+
+/* Segítség a JavaScript-hez */
+[data-animate="fade"] {
+    animation: fadeIn 1s ease-in-out;
+}
+
+[data-animate="slide"] {
+    animation: slideIn 1s ease-in-out;
+}
+
+[data-animate="zoom"] {
+    animation: zoomIn 1s ease-in-out;
+}
+
