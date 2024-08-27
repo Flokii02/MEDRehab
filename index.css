@@ -433,6 +433,9 @@ margin-bottom: 20px;
     font-size: 1.4rem;
     background-color: #E5E3E6;
 }
+.text-content:link{
+  text-decoration: none;
+}
 .text-content p{
     padding-top: 10px;
     display: flex;
