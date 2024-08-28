@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://flokii02.github.io/MEDRehab/sitemap.xml
+
+
+
+
+
+
