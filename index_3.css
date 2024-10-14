@@ -648,4 +648,15 @@ footer {
 [data-animate="zoom"] {
     animation: zoomIn 1s ease-in-out;
 }
-
+.language-select {
+    position: fixed;
+    bottom: 20px; /* 20px-re a képernyő aljától */
+    right: 20px;  /* 20px-re a képernyő jobb szélétől */
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1000; /* A legfelső rétegen maradjon */
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
