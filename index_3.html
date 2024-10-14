@@ -34,10 +34,10 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v20.0" nonce="3ianvjiw"></script>
 <header>
    <nav class="navbar">
-    <a href="index.html">Kezdőlap</a>
-    <a href="index_2.html">Galéria</a>
-    <a href="index_3.html">Kapcsolat</a>
-    <a href="index_4.html">Szolgáltatások</a>
+   <a href="index.html" data-hu="Kezdőlap" data-sr="Početna">Kezdőlap</a>
+    <a href="index_2.html" data-hu="Galéria" data-sr="Galerija" >Galéria</a>
+    <a href="index_3.html" data-hu="Kapcsolat" data-sr="Kontakt">Kapcsolat</a>
+    <a href="index_4.html" data-hu="Szolgáltatások" data-sr="Usluge">Szolgáltatások</a>
    </nav>
    <div class="icons">
     <a href="https://www.facebook.com/MedRehab.NoviBecej" class="facebook"><img src="facebook-logo-in-circular-shape.png" ></a>
@@ -48,6 +48,10 @@
         <i class="fas fa-bars"></i>
    </div>
 </header>
+    <select name="" id="language-select" class="language-select" onchange="changeLanguage()">
+    <option value="hu">Magyar</option>
+    <option value="sr">Srpski</option>
+</select>
 <section class="home" id="home">
     <div class="content">
         <h1>MEDRehab</h1>
@@ -145,7 +149,7 @@
     </div>
 </footer>
     <div class="fb-like" data-href="https://flokii02.github.io/MEDRehab/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
-
+<script src="oldal 1.js"></script>
 <script src="document.js"></script>
 </body>
 </html>
