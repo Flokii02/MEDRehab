@@ -33,10 +33,10 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v20.0" nonce="3ianvjiw"></script>
 <header>
    <nav class="navbar">
-    <a href="index.html">Kezdőlap</a>
-    <a href="index_2.html">Galéria</a>
-    <a href="index_3.html">Kapcsolat</a>
-    <a href="index_4.html">Szolgáltatások</a>
+   <a href="index.html" data-hu="Kezdőlap" data-sr="Početna">Kezdőlap</a>
+    <a href="index_2.html" data-hu="Galéria" data-sr="Galerija" >Galéria</a>
+    <a href="index_3.html" data-hu="Kapcsolat" data-sr="Kontakt">Kapcsolat</a>
+    <a href="index_4.html" data-hu="Szolgáltatások" data-sr="Usluge">Szolgáltatások</a>
    </nav>
    <div class="icons">
     <a href="https://www.facebook.com/MedRehab.NoviBecej" class="facebook"><img src="facebook-logo-in-circular-shape.png" ></a>
@@ -47,32 +47,50 @@
         <i class="fas fa-bars"></i>
    </div>
 </header>
+    <select name="" id="language-select" class="language-select" onchange="changeLanguage()">
+    <option value="hu">Magyar</option>
+    <option value="sr">Srpski</option>
+</select>
 <section class="home" id="home">
     <div class="content">
         <h1>MEDRehab</h1>
-        <span>Szőnyi Csongor</span>
+        <span data-hu="Szőnyi Csongor" data-sr="Čongor Senji">Szőnyi Csongor</span>
     </div>
 </section>
 
 <section class="gallery-section scroll-slide" data-animate="slide">
-    <h1>Szolgáltatások</h1>
+    <h1 data-hu="Szolgáltatások" data-sr="Usluge">Szolgáltatások</h1>
 </section>
 <section class="content-section scroll-slide" data-animate="slide">
     <div class="image-container">
         <img src="pexels-funkcines-terapijos-centras-927573878-20860614.jpg" alt="Kép">
     </div>
     <div class="text-container">
-        <h2>Gyógytorna</h2>
-        <p>A gyógytorna a páciens összes panaszának csökkentésére, vagy megelőzésére
+        <h2 data-hu="Gyógytorna" data-sr="Fizioterapija">Gyógytorna</h2>
+        <p data-hu="A gyógytorna a páciens összes panaszának csökkentésére, vagy megelőzésére
+            irányuló (nem műtéti) kezelés. Alkalmazható pl. műtétek előtt és után, sportsérüléseknél,
+            mozgásszervi balesetek után, gerincferdülésnél." data-sr="
+Fizioterapija je tretman (neoperativni) usmeren na smanjenje ili prevenciju svih pritužbi pacijenta. Može se primeniti, na primer, pre i posle operacija, kod sportskih povreda, nakon povreda mišićno-koštanog sistema, kod skolioze.">A gyógytorna a páciens összes panaszának csökkentésére, vagy megelőzésére
             irányuló (nem műtéti) kezelés. Alkalmazható pl. műtétek előtt és után, sportsérüléseknél,
             mozgásszervi balesetek után, gerincferdülésnél.</p>
-        <p class="centered-text">Schroth Módszer</p>
-        <p>3 dimenziós scoliózis terápia. Gerincferdülés, Scheuermann kór, hanyag tartás
+        <p class="centered-text" data-hu="Schroth Módszer" data-sr="Schroth metoda">Schroth Módszer</p>
+        <p data-hu="3 dimenziós scoliózis terápia. Gerincferdülés, Scheuermann kór, hanyag tartás
+            különböző formáinak kezelése bármely korosztály számára. Személyre szabott terápia,
+            korrigált testhelyzetben végzett erősítés, mely jelenleg világviszonylatban a
+            legeredményesebb az említett problémák esetén." data-sr="
+3D terapija skolioze je pristup koji se koristi za lečenje različitih oblika skolioze, Scheuermannove bolesti i lošeg držanja kod svih uzrasta. Ova personalizovana terapija uključuje jačanje mišića u ispravljenom položaju tela, a trenutno se smatra najefikasnijom metodom u svetu za rešavanje ovih problema." >3 dimenziós scoliózis terápia. Gerincferdülés, Scheuermann kór, hanyag tartás
             különböző formáinak kezelése bármely korosztály számára. Személyre szabott terápia,
             korrigált testhelyzetben végzett erősítés, mely jelenleg világviszonylatban a
             legeredményesebb az említett problémák esetén.</p>
-        <p class="centered-text">Proprioceptív Tréning</p>
-        <p>Végtag sérülések (boka, térd, csípő, csukló, könyök, váll ízületek) kezelésére-
+        <p class="centered-text" data-hu="Proprioceptív Tréning" data-sr="Proprioceptivni trening">Proprioceptív Tréning</p>
+        <p data-hu="Végtag sérülések (boka, térd, csípő, csukló, könyök, váll ízületek) kezelésére-
+            megelőzésére alkalmas módszer, továbbá a gerincet is képes stabilizálni a megfelelő
+            izomfűző kialakításával. Többnyire instabil felületen végzett torna, mellyel nemcsak az
+            érintett területet kezeljük, hanem a környező ízületeket, izmokat is. (Bármilyen sérülés,
+            instabilitás esetén a környező izmok-ízületek is túlterhelődnek, mivel megpróbálják
+            tehermentesíteni a problémás területet.) Ez a torna lehetővé teszi a későbbiekben az aktív
+            sport újbóli végzését, mivel stabilitást ad a sport közben a hirtelen megállásra és fordulásra,
+            melyek az alsó végtagi sportsérülések leggyakoribb okai." data-sr="Metoda koja se koristi za lečenje i prevenciju povreda ekstremiteta (zapešća, kolena, kukova, lakta, ramena), kao i za stabilizaciju kičme kroz razvoj adekvatnog mišićnog steznika. Vežbe se najčešće izvode na nestabilnim površinama, čime ne samo da tretiramo pogođeno područje, već i okolne zglobove i mišiće. (Svaka povreda ili nestabilnost dovodi do preopterećenja okolnih mišića i zglobova, jer pokušavaju da rasterete problematičnu oblast.) Ova vrsta treninga omogućava povratak aktivnom sportu u budućnosti, jer pruža stabilnost prilikom iznenadnog zaustavljanja i okretanja, što su najčešći uzroci povreda donjih ekstremiteta tokom sportskih aktivnosti.">Végtag sérülések (boka, térd, csípő, csukló, könyök, váll ízületek) kezelésére-
             megelőzésére alkalmas módszer, továbbá a gerincet is képes stabilizálni a megfelelő
             izomfűző kialakításával. Többnyire instabil felületen végzett torna, mellyel nemcsak az
             érintett területet kezeljük, hanem a környező ízületeket, izmokat is. (Bármilyen sérülés,
@@ -320,7 +338,7 @@
     </div>
 </footer>
     <div class="fb-like" data-href="https://flokii02.github.io/MEDRehab/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
-
+<script src="oldal 1.js"></script>
 <script src="document.js"></script>
 </body>
 </html>
